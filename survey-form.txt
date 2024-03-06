@@ -1,0 +1,124 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out the survey form below.</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">Your Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+    <label for="email" id="email-label">Your Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+    <label for="number" id="number-label">Your Age:</label>
+    <input type="number" id="number" name="age" placeholder="Enter your age" min="18" max="100" required>
+    
+    <label for="dropdown" id="dropdown-label">Select Your Country:</label>
+    <select id="dropdown" name="country">
+      <option value="USA">USA</option>
+      <option value="Canada">Canada</option>
+      <option value="UK">UK</option>
+      <option value="Australia">Australia</option>
+    </select>
+    
+    <fieldset>
+      <legend>Gender:</legend>
+      <label><input type="radio" name="gender" value="male"> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+      <label><input type="radio" name="gender" value="other"> Other</label>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Select Your Hobbies:</legend>
+      <label><input type="checkbox" name="hobby" value="reading"> Reading</label>
+      <label><input type="checkbox" name="hobby" value="gaming"> Gaming</label>
+      <label><input type="checkbox" name="hobby" value="traveling"> Traveling</label>
+      <label><input type="checkbox" name="hobby" value="cooking"> Cooking</label>
+    </fieldset>
+    
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments"></textarea>
+    
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+/* Apply styles to the form */
+#survey-form {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Apply styles to the form title */
+#title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Apply styles to the form description */
+#description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Apply styles to input fields and labels */
+input[type='text'],
+input[type='email'],
+input[type='number'],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensures padding and border are included in width */
+}
+
+label {
+  font-weight: bold;
+}
+
+/* Apply styles to radio buttons and checkboxes */
+input[type='radio'],
+input[type='checkbox'] {
+  margin-right: 5px;
+}
+
+/* Apply styles to submit button */
+#submit {
+  width: auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #0056b3;
+}
+
+
+** end of undefined **
+
